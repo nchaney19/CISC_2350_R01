@@ -1,0 +1,97 @@
+/*Background style*/
+body {
+    background-image: url('http://www.renegadetribune.com/wp-content/uploads/2016/06/Background-Texture-Surface-Dark.jpg'); 
+    background-attachment: scroll;
+    background-position: 99% center;
+    background-repeat: repeat;
+    opacity: 1.0;
+}
+  
+body-wrap, inner-wrap,.page-width, .header, #browse-menu {
+    height: 41px;
+    width: 100%;
+    padding-top: 19px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: inline-block;
+}
+
+/*Style for Navigation links*/
+li{
+  font-weight: 500;
+    letter-spacing: 1.5px;
+    margin: 0;
+    padding: 20px 18px 10px 18px;
+    display: initial;
+}
+
+/*text style with font family*/
+body, p, h1,h3{
+    font-family: "Montserrat", sans-serif;
+    color: white;
+    text-align: center;
+    background-color: transparent;
+}
+
+/*Embedding words in image*/
+h1 span{
+    position: absolute;
+    top: 400px;
+    left: 0;
+    width: 100%;
+    font-size: 70px;
+}
+
+/*header 2 font size*/
+h2{
+    font-size: 30px;
+}
+
+/*main image opacity*/
+img.image{
+    opacity: 0.85;
+}
+
+/*paragraph spacing*/
+p{
+  padding: 40px;
+  letter-spacing: 1.7px;
+}
+
+/*navigation link style*/
+a:link{
+    color: white;
+    text-decoration: underline; 
+}
+
+a:visited{
+    color: lightblue;
+    text-decoration: underline;
+}
+
+/*footer position*/
+footer{
+    position: bottom page;
+}
+
+/*mouseover image change*/
+.slick-slider{
+    user-select: none;
+    -webkit-tap-highlight-color: transparent;
+}
+
+/*navigation link tab style*/
+.navigation {
+    box-sizing: border-box;
+    background-color: rgb(25,25,27);
+    overflow: auto;
+    padding: 18px 50px;
+    position: relative;
+    top: 0;
+    width: 100%;
+  }
+
+.active {
+    color: lightblue;
+}
