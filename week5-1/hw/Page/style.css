@@ -1,0 +1,40 @@
+		div {
+			background-color:black;
+		}
+
+		h1 {
+			color: white;
+			text-align: center;
+			font-family: Berlin Sans FB Demi;
+			}
+
+		p{
+			 font-family: castellar; 
+			 font-size: 10pt;
+			 color: white;
+			 text-align: center;
+			 border: 5px white;
+
+		 }
+		
+		img{
+
+			color: white;
+		}
+		ul
+		{
+			color: grey;
+			font-size: 15pt;
+
+		}
+		.title{
+  
+ 			 color:white;
+		}
+		.uppercase{
+ 			 text-transform:uppercase;
+		}
+		#article-title{
+ 			 font-family: cursive;
+			text-transform: capitalize;
+		}
