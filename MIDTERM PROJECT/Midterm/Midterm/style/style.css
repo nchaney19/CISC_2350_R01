@@ -1,0 +1,133 @@
+/*Background style*/
+body {
+		background-color: rgb(1,9,25);
+		background-image: url('http://www.renegadetribune.com/wp-content/uploads/2016/06/Background-Texture-Surface-Dark.jpg'); 
+		background-attachment: scroll;
+		background-position: 99% center;
+		background-repeat: repeat;
+		background-size: 3000px;
+		opacity: 1.0;
+}	
+	
+body-wrap, inner-wrap,.page-width, .header, #browse-menu {
+	    height: 41px;
+	    width: 100%;
+	    padding-top: 19px;
+	    position: absolute;
+	    left: 0;
+	    top: 0;
+	    display: inline-block;
+}
+
+.image{
+		position: relative;
+		width: 100%;
+}
+
+/*Surrounding image spacing for product features*/
+.design{
+	padding: 30px;
+	opacity: 0.9;
+}
+
+/*Embedding words in image*/
+h1 span{
+		position: absolute;
+		top: 200px;
+		left: 0;
+		width: 100%;
+		font-size: 100px;
+
+}
+
+/*Style for Navigation links*/
+li{
+		font-weight: 500;
+	    letter-spacing: 1.5px;
+	    margin: 0;
+	    padding: 20px 18px 10px 18px;
+	    display: initial;
+}
+
+/*text style with font family*/
+body, p, h1,h3{
+		font-family: "Montserrat", sans-serif;
+		color: white;
+		text-align: center;
+}
+
+/*paragraph spacing*/
+p{
+		padding: 40px;
+		letter-spacing: 1.0px;
+}
+
+/*table groups style*/
+th{
+		text-transform: uppercase;
+		padding: 70px;
+	    text-align: left;
+	    font-size: 20px;
+	    color: rgb(5,25,67);
+	    font-weight: bold;
+		text-align: center;
+}
+
+/*header size*/
+header{
+		max-width: 1500px;
+}
+
+/*footer positioning and background color*/
+footer{
+		position: bottom-center;
+		background-color: black;
+}
+
+/*table color and opacity only */
+table{
+		background-color: rgb(44,73,134);
+		opacity: 0.97;
+}
+
+/*table layout style*/
+table, td {
+	   border: 3px solid white;
+	   letter-spacing: 2px;
+	   height: 200px;
+	   left: 20px;
+	   margin: 5px auto;
+	   position: static;
+	   width: 1200x;
+}
+
+/*navigation link style*/
+a:link{
+	   color: white;
+	   text-decoration: underline; 
+}
+
+a:visited{
+		color: lightblue;
+		text-decoration: underline;
+}
+
+/*table group font style*/
+.uppercase{
+ 		text-transform:uppercase;
+}
+
+/*navigation link tab style*/
+.navigation {
+		box-sizing: border-box;
+		background-color: rgb(25,25,27);
+		overflow: auto;
+		padding: 18px 50px;
+		position: relative;
+		top: 0;
+		width: 100%;
+}
+
+.active {
+  		color: lightblue;
+}
