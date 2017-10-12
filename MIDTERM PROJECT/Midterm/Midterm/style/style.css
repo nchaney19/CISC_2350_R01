@@ -19,6 +19,7 @@ body-wrap, inner-wrap,.page-width, .header, #browse-menu {
 	    display: inline-block;
 }
 
+/*Main image text positioning*/
 .image{
 		position: relative;
 		width: 100%;
