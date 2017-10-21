@@ -1,0 +1,71 @@
+body{
+	background-image: url('http://www.imagestowallpapers.com/wp-content/uploads/2015/12/Background-Image-CSS4.jpg');
+	opacity: 1.5;
+	background-position: fixed;
+	background-repeat: no-repeat;
+	background-size: 1900px;
+}
+
+header{
+	text-align: center;
+	color: white;
+	/*dashed border around header*/
+	border-style: dashed;
+	background-color: teal;
+	opacity: .6;
+	border-bottom-style: wavy;
+}
+
+/*Font family*/
+body,p , h1{
+	font-family: "Playfair Display",serif;
+}
+
+/*image alignment*/
+.circle{
+	float: right;
+}
+
+.leftcircle {
+	float: left;
+}
+
+/*In-range style selector changing box green when number is in the specified range*/
+input:in-range {
+  border: 5px solid green;
+}
+
+/*Color changes red when input is not in the specified range*/
+input:invalid {
+  background: hsla(0, 90%, 70%, 1);
+}
+
+input:valid {
+  background: hsla(100, 90%, 70%, 1);
+}
+
+/*text style*/
+p{
+	color: purple;
+	text-align: center;
+}
+
+/*Changes shape of image to circle*/
+img{
+	border-radius: 50%;
+}
+
+.element {
+	font-size: 20px;
+}
+
+/*table layout style*/
+table, td {
+	   border: 1.5px solid white;
+	   letter-spacing: 2px;
+	   height: 20px;
+	   left: 20px;
+	   margin: 2px auto;
+	   position: static;
+	   width: 60px;
+}
