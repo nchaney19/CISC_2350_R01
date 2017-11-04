@@ -1,0 +1,29 @@
+body{
+    color: #333333;
+    background-color: lightblue;
+}
+
+.header{
+	position: relative;
+	border-radius: 50%;
+	border-color: rgb(161,10,56);
+}
+
+.pic{
+	height: 300px;
+	width: 400px;
+	transition: opacity 1.0;
+}
+
+.pic:hover{
+	opacity: 0.8;
+}
+
+.header{
+	display: inline-block;
+	padding-right: 500px;
+	font-family: sans-serif;
+    font-weight: normal;
+    font-size: 25px;
+}
+
