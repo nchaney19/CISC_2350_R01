@@ -1,0 +1,20 @@
+* {
+	box-sizing: border-box;
+	font-family: "Montserrat", sans-serif;
+}
+
+h1{
+	text-align: center;
+	}
+
+body {
+	background-color: rgb(241,118,48);
+	color: white;
+}
+
+[class*="col-"] {
+    background-color: lightblue;
+	border: 2px dashed white;
+	color: white;
+}	
+
