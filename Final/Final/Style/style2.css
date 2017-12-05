@@ -1,0 +1,168 @@
+body {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	z-index: 10;
+	background-color: rgb(230, 242, 255);
+	text-align-last: center;
+	min-width: 600px;
+	min-height: 200px;
+}
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 480px) {
+/* Styles */
+}
+
+
+/*Background Image fade-in*/
+@import "compass/css3";
+
+@-webkit-keyframes fade-in {
+  0%   { opacity: 0; }
+  100% { opacity: 1.0; }
+}
+
+#content1{
+  background:no-repeat center center fixed;
+  
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  
+  opacity: 0;
+  
+  -webkit-animation-name: fade-in;
+  -webkit-animation-duration: 3s;
+  -webkit-animation-timing-function: ease-in;
+  -webkit-animation-iteration-count: 1;
+/*  -webkit-animation-delay: 1s;*/
+
+-webkit-animation-fill-mode:forwards;  /* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
+-moz-animation-fill-mode:forwards;
+animation-fill-mode:forwards;
+}
+
+#content1.visible {
+  opacity: 1.0;
+}
+
+/*icon animation*/
+/* make keyframes that tell the start state and the end state of our object */
+ 
+@-webkit-keyframes fadeIn { 
+  from { 
+    opacity:0.4;
+    margin-top: 200px;
+  }
+
+  to {
+    opacity:0.6; 
+  } 
+}
+
+@-moz-keyframes fadeIn {
+  from {
+    opacity:0.4;
+    margin-top: 200px;
+  } 
+
+  to {
+    opacity:0.6; 
+  } 
+}
+
+/*@keyframes bounceInDown{
+   from, 60%, 75%, 90%, to {
+    animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+  }
+    0% {
+    opacity: 0;
+    transform: translate3d(0, -3000px, 0);
+  }
+
+  60% {
+    opacity: 1;
+    transform: translate3d(0, 25px, 0);
+  }
+
+  75% {
+    transform: translate3d(0, -10px, 0);
+  }
+
+  90% {
+    transform: translate3d(0, 5px, 0);
+  }
+
+  to {
+    transform: none;
+  }
+}
+
+.bounceInDown {
+  animation-name: bounceInDown;
+}
+*/
+
+.middleIcon {
+  border: 0;
+  position: fixed;
+  top: 680px;
+  right: 650px;
+}
+
+p {
+    padding: 0;
+    margin: 0;
+    left: 0;
+    font-family: "Coming Soon", cursive;
+}
+
+
+
+/*Background Horizontal Scroll*/
+#wrap{
+	width: 4817px;
+	border: 0;
+	padding: 0;
+    overflow: hidden;
+    position: relative; 
+}
+
+#wrap div {
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    display: inline-block;
+}
+
+/*Background Images*/
+
+#content1 {
+    background-image: url("../Images/dc2.png");
+    height: 790px;
+    width: 1600px;
+    opacity: 0.9;
+}
+
+#content2 {
+    background-image: url("../Images/md.png");
+    height: 790px;
+    width: 1600px;
+    opacity: 0.9;
+
+}
+
+#content3 {
+    background-image: url("../Images/ny.png");
+    height: 790px;
+    width: 1600px;
+    opacity: 0.9;
+}
