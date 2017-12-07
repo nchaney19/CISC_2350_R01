@@ -1,0 +1,180 @@
+body{
+  text-align-last: center;
+}
+
+/*text style*/
+div,h1,p{
+  color: #DE4BAB; 
+  font-family: "Cabin Sketch",cursive;
+  font-size: 32px;
+  font-style: normal bold;
+  font-variant: normal;
+  font-weight: 500;
+  display: inline;
+  position: relative;
+  }
+
+.home{ font-size: 70px; }
+
+.gallery{ 
+  font-size: 45px;
+  left: 320px;
+  top:0;
+}
+
+.contact{
+  font-size: 45px;  
+  right: 360px;
+  top:0;
+}
+
+a:hover, a:visited, a:link, a:active
+{
+    text-decoration: none;
+}
+
+/*Background Image fade-in*/
+@import "compass/css3";
+
+@keyframes fade-in {
+  0%   { opacity: 0; }
+  100% { opacity: 1.0; }
+}
+
+.background-image {
+  background: url(../Images/map.png) no-repeat center center fixed;
+  
+  background-size: cover;
+  
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  
+  opacity: 0;
+  
+  animation-name: fade-in;
+  animation-duration: 3s;
+  animation-timing-function: ease-in;
+  animation-iteration-count: 1;
+  animation-delay: 1s;
+  /* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
+  animation-fill-mode:forwards;
+}
+
+.background-image.visible { opacity: 1.0;}
+
+/*icon animation*/
+/* make keyframes that tell the start state and the end state of our object */
+@keyframes fadeIn {
+  from { margin-top: 200px;}
+  to { opacity:0.91;} 
+}
+ 
+h1,.fade-in.burger{
+  opacity:0;   /* make things invisible upon start */  
+  animation:fadeIn ease-in 1;  /* call our keyframe named fadeIn, use animattion ease-in and repeat it only 1 time */
+  animation-fill-mode:forwards; /* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
+  animation-duration:3s;
+}
+
+/*Main Icon Positioning*/
+.burger{
+  padding-right: 20px;
+}
+
+/*Button Style and positioning*/
+/*DC Flag*/
+.mp1{
+  border: 0;
+  position: fixed;
+  top: 495px;
+  right: 994px;
+  border-radius: 50%;
+}
+  
+/*MD Flag*/
+.mp2{
+  border: 0;
+  position: fixed;
+  top: 440px;
+  right: 950px;
+  border-radius: 50%;
+}
+
+/*NY Flag*/
+.mp3{
+  border: 0;
+  position: fixed;
+  top: 240px;
+  right: 925px;
+  border-radius: 50%;
+}
+
+/*Button border*/
+.mp1,
+.mp2,
+.mp3{
+  box-shadow: 0px 9px 0px rgba(219,31,5,1), 0px 9px 30px rgba(0,0,0,.7);
+  margin: 100px auto;
+  width: 60px;
+  height: 50px;
+}
+
+/*Click effect for button*/
+.mp1:hover,
+.mp2:hover,
+.mp3:hover{
+  transform: translateY(4px); 
+}
+
+/*Button ZoomIn animation*/
+@keyframes zoomIn {
+  from {
+    opacity: 0;
+    transform: scale3d(.3, .3, .3);
+  }
+  100% {
+    opacity: 1.0;
+  }
+}
+
+.zoom-in.mp1,
+.zoom-in.mp2,
+.zoom-in.mp3{
+  opacity:0;  
+  animation:zoomIn ease-in 1;
+  animation-fill-mode:forwards;
+  animation-iteration-count: 1;
+  animation-delay: 3s;
+  animation-duration: 2s;
+}
+
+/*Page info positioning and animation*/
+p{
+  position: absolute;
+  bottom: 100px;
+  left: 780px;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 750px;
+  padding: 30px;
+  animation: type 4s steps(90,end);
+}
+
+p:nth-child(2){
+  animation: type2 8s steps(80,end);
+}
+
+@keyframes type{
+  from{
+  opacity: 0;
+  width: 0; }
+}
+
+@keyframes type2{
+  0%{width:0;}
+  50%{width: 0;}
+  100%{width: 100;}
+}

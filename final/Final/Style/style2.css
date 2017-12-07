@@ -1,0 +1,254 @@
+body {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	z-index: 10;
+	background-color: rgb(230, 242, 255);
+	text-align-last: center;
+ /* min page size*/
+	min-width: 600px;
+	min-height: 200px;
+}
+
+/*text style*/
+div{
+  color: #DE4BAB;
+  font-style: bold;
+  font-family: "Coming Soon", cursive;
+  font-size: 50px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 500;
+  line-height: 26.4px;
+  display: inline-block;
+  position: relative;
+  }
+
+/*hide scrollbars in google chrome*/
+  ::-webkit-scrollbar{
+    display: none;
+  }
+
+/*Background Image fade-in*/
+@import "compass/css3";
+
+@keyframes fade-in {
+  0%   { opacity: 0; }
+  100% { opacity: 1.0; }
+}
+
+.content{
+  background:no-repeat center center fixed;
+  background-size: cover;
+
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  
+  opacity: 0;
+  
+  animation-name: fade-in;
+  animation-duration: 3s;
+  animation-timing-function: ease-in;
+  animation-iteration-count: 1;
+  /* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
+  animation-fill-mode:forwards;
+}
+
+.content.visible { opacity: 1.0;}
+
+/*icon animation for Home Icon and location markers*/
+/* make keyframes that tell the start state and the end state of our object */
+@keyframes bounceInDown{
+   from, 60%, 75%, 90%, to {
+    animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+  }
+    0% {
+    opacity: 0;
+    transform: translate3d(0, -3000px, 0);
+  }
+
+  60% {
+    transform: translate3d(0, 25px, 0);
+  }
+
+  75% {
+    transform: translate3d(0, -10px, 0);
+  }
+
+  90% {
+    opacity: 1
+    transform: translate3d(0, 5px, 0);
+  }
+
+  to {
+    transform: none;
+  }
+}
+
+.bounceInDown {
+  animation-name: bounceInDown;
+}
+
+.bounceInDown.middleIcon,
+.bounceInDown.pin1,
+.bounceInDown.pin2,
+.bounceInDown.pin3,
+.bounceInDown.pin4,
+.bounceInDown.pin5,
+.bounceInDown.pin6
+.bounceInDown.pin7{
+  animation-name: bounceInDown;
+  animation-duration: 3s;
+  animation-timing-function: ease-in;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+/*car Icon Positioning*/
+.middleIcon {
+  border: 0;
+  position: fixed;  /*Allows car to move throughout the layered backgrounds*/
+  top: 680px;
+  right: 690px;
+}
+
+/*Pin Marker Positioning*/
+.pin1{
+  border: 0;
+  position: absolute;
+  background-attachment: fixed;
+  top:400px;
+  right: 1200px;
+  height: 110px;
+  width: 80px;
+}
+
+.pin2{
+  border: 0;
+  position: absolute;
+  background-attachment: fixed;
+  top:270px;
+  right: 700px;
+  height: 75px;
+  width: 50px;
+}
+
+.pin3{
+  border: 0;
+  position: absolute;
+  background-attachment: fixed;
+  top:430px;
+  right: 400px;
+  height: 115px;
+  width: 90px;
+}
+
+.pin4{
+  border: 0;
+  position: absolute;
+  background-attachment: fixed;
+  top:200px;
+  left: 1680px;
+  height: 115px;
+  width: 85px;
+}
+
+.pin5{
+  border: 0;
+  position: absolute;
+  background-attachment: fixed;
+  top:300px;
+  left: 2850px;
+  height: 95px;
+  width: 70px;
+}
+
+.pin6{
+  border: 0;
+  position: absolute;
+  background-attachment: fixed;
+  top:400px;
+  left: 3650px;
+  height: 65px;
+  width: 50px;
+}
+
+.pin7{
+  border: 0;
+  position: absolute;
+  background-attachment: fixed;
+  top:685px;
+  left: 4500px;
+  height: 125px;
+  width: 95px;
+}
+
+/*Background Horizontal Scroll*/
+#wrap{
+	width: 4845px;
+	border: 0;
+	padding: 0;
+  overflow: hidden;
+}
+
+#wrap div {
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  display: inline-block;
+}
+
+/*Background Images w/style*/
+#content1 {
+    background-image: url("../Images/dc2.png");
+    height: 840px;
+    width: 1600px;
+    opacity: 0.87;
+    margin: 0;
+}
+
+#content2 {
+    background-image: url("../Images/md.png");
+    height: 840px;
+    width: 1600px;
+    opacity: 0.87;
+    margin: 0;
+}
+
+#content3 {
+    background-image: url("../Images/ny.png");
+    height: 840px;
+    width: 1600px;
+    opacity: 0.87;
+    margin-right: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+/*Icon Positioning--links to home */
+.burger{
+  border: 0;
+  position: fixed;
+  top:20px;
+  right: 780px;
+}
+
+/*Icon animation*/
+@keyframes slideInLeft {
+  from {
+    transform: translate3d(-1500%, 0, 0);
+    visibility: visible;
+  }
+  to {
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.slideInLeft.burger{
+  animation-name: slideInLeft;
+  animation-duration: 3s;
+  animation-timing-function: ease-in;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
