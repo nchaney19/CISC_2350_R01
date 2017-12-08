@@ -1,0 +1,74 @@
+body{
+  text-align-last: center;
+  background-color: rgb(230, 242, 255);
+}
+
+/*text style*/
+div,h1,h2,p{
+  color: #DE4BAB; 
+  font-family: "Cabin Sketch",cursive;
+  font-size: 32px;
+  font-style: normal bold;
+  font-variant: normal;
+  font-weight: 500;
+  display: inline;
+  position: relative;
+  }
+
+li{
+    padding-bottom: 30px;
+}
+
+/*gallery link positioning*/
+.gallery{ 
+  font-size: 45px;
+  left: 320px;
+  top:0;
+}
+
+/*Contact link positioning*/
+.contact{
+  font-size: 45px;  
+  right: 360px;
+  top:0;
+}
+
+/*Icon Positioning--links to home */
+.burger{
+  border: 0;
+  position: absolute;
+  top:20px;
+  right: 845px;
+  padding-right: 20px;
+}
+
+/*Link to home*/
+.home{ font-size: 70px; }
+
+a:hover, a:visited, a:link, a:active
+{
+    text-decoration: none;
+}
+
+/*icon animation*/
+/* make keyframes that tell the start state and the end state of our object */
+@keyframes fadeIn {
+  from { margin-top: 200px;}
+  to { opacity:0.91;} 
+}
+ 
+h1,h2, h6,li,.fade-in.burger{
+  opacity:0;   /* make things invisible upon start */  
+  animation:fadeIn ease-in 1;  /* call our keyframe named fadeIn, use animattion ease-in and repeat it only 1 time */
+  animation-fill-mode:forwards; /* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
+  animation-duration:3s;
+}
+
+/*footer positioning*/
+footer{
+    background-attachment: absolute;
+    position: relative;
+    text-align: center;
+    bottom:20px;
+    right: 0;
+}
