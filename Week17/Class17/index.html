@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Animationx</title>
+		<link rel="stylesheet" href="style.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+		<script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+  		<link rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css">
+	</head>
+
+	<!-- Links screen to specific point on page -->
+	<body onLoad="window.scrollBy(0,550)">
+		<!-- Background image blur -->
+		<div class="parallaximage1" id="blureffect">
+		<!-- Embedding Words in Images -->
+		   		<p class="large text-white"><span class=" padding white opacity-min">
+		   			 Perspective allows the image to rotate when the mouse hovers over it. Gives the image a 3D effect. The visual effect determines in the strength and the smaller the value is, the more noticeable the effect. Perspective uses the transform property to rotate an element in its 3D space.</span></p>
+		   </div>
+
+		   <!-- Day button that opens up month calender -->
+			<input class="date" type="input" id="hiddenField" class="datepicker" />
+	
+
+			<!-- Changes plus button to minus button -->
+			<a href="#"><div class="plus">CHANGE</div></a>
+
+		   <!-- For Perspective property to establish elements -->
+			<div class="wrapper">
+				<div class="inner">
+					<figure>
+						<img src="https://cdn.vectorstock.com/i/thumb-large/68/21/9086821.jpg" height="250" width="200">
+					</figure>
+				</div>
+			</div>	
+		
+		<div class="scrollingdiv"></div>
+		<div class="parallaximage2" id="blureffect"></div>
+
+	</body>
+</html>
